@@ -8,7 +8,7 @@
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+The experiment consists of obtaining stress-strain curves of different materials using tensile testing. Furthermore,
 
 <b>Name of Developer | <b> Prof. Kantesh Balani 
 :--|:--|
