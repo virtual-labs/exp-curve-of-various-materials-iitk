@@ -1,1 +1,1 @@
-### Aim of the experiment
+### To study the stress-strain curves of different behaviour
