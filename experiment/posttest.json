@@ -50,6 +50,16 @@
         "d": "All of the above"
       },
       "correctAnswer": "c"
+    },
+    {
+      "question": "6. Which one of the following is true for the stress-strain curve of ceramic material?",
+      "answers": {
+        "a": "The stress-strain curve shows large plasticity",
+        "b": "The stress-strain curve shows that material exhibits low toughness",
+        "c": "The stress-strain curve is generally non-linear till fracture",
+        "d": "All of the above"
+      },
+      "correctAnswer": "b"
     }
   ]
 }
