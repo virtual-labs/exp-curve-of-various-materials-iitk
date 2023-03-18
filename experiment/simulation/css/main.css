@@ -25,7 +25,7 @@ body {
 }
 
 .menu {
-  width: 280px;
+  width: 300px;
   height: 100vh;
   padding-top: 10px;
   overflow-y: auto;
@@ -44,6 +44,18 @@ p {
   font-size: 12px;
   font-weight: 300;
   font-family: 'Courier New', Courier, monospace;
+}
+
+.mb-2 {
+  margin-bottom: 0.4rem;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
 }
 
 .main {
@@ -122,6 +134,10 @@ p {
   color: #b4b4b4;
 }
 
+.accordion .box.disabled {
+  display: none;
+}
+
 .accordion .box.done {
   cursor: initial;
   background-color: #76ff66;
@@ -173,10 +189,17 @@ p {
   border-collapse: collapse;
 }
 
+.d-none {
+  display: none;
+}
+
 .actions {
   padding: 20px;
   margin-bottom: 10px;
   text-align: end;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
 .actions .btn {
@@ -193,6 +216,54 @@ p {
   background: #b3b3b3;
   box-shadow: none;
   cursor: initial;
+}
+
+
+.blink {
+  -webkit-animation-name: toggle;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: toggle;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  animation-name: toggle;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes toggle {
+  from {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+
+  to {
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes toggle {
+  from {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+
+  to {
+    visibility: visible;
+  }
+}
+
+.blink.disabled {
+  display: none;
 }
 
 .mt-1 {
