@@ -67,7 +67,9 @@ function init() {
     if (sample1) sample1.paint();
   };
 
-  ctx.refresh();
+  setInterval(() => {
+    ctx.refresh();
+  }, 800);
 }
 
 function resize() {
@@ -112,6 +114,9 @@ function onClickHandler(event) {
   if (utm) utm.onClickHandler(event);
   if (vc) vc.onClickHandler(event);
   if (sample1) sample1.onClickHandler(event);
+
+  // also on click
+  onContextMenuHandler(event);
 }
 
 function onMouseWheelHandler(event) {

@@ -83,28 +83,29 @@ class ContextMenu {
     }
   }
 
-  show(e) {
+  show({x, y}) {
     const contextMenu = this.renderMenu();
     this.isOpened = true;
 
-    const { clientX, clientY } = e;
+    // const { clientX, clientY } = e;
     document.body.appendChild(contextMenu);
 
-    const positionY =
-      clientY + contextMenu.scrollHeight >= window.innerHeight
-        ? window.innerHeight - contextMenu.scrollHeight - 20
-        : clientY;
-    const positionX =
-      clientX + contextMenu.scrollWidth >= window.innerWidth
-        ? window.innerWidth - contextMenu.scrollWidth - 20
-        : clientX;
+    // const positionY =
+    //   clientY + contextMenu.scrollHeight >= window.innerHeight
+    //     ? window.innerHeight - contextMenu.scrollHeight - 20
+    //     : clientY;
+    // const positionX =
+    //   clientX + contextMenu.scrollWidth >= window.innerWidth
+    //     ? window.innerWidth - contextMenu.scrollWidth - 20
+    //     : clientX;
 
     contextMenu.setAttribute(
       "style",
       `width: ${contextMenu.scrollWidth}px;
           height: ${contextMenu.scrollHeight}px;
-          top: ${positionY}px;
-          left: ${positionX}px;`
+          top: ${y}px;
+          left: ${x}px;
+          z-index: 1;`
     );
     return contextMenu;
   }

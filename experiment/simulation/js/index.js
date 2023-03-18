@@ -34,10 +34,16 @@ const readingData = [
   [75, 405],
 ];
 
-// x axis 
-const dialReading = [0, 6, 12, 16, 22, 28, 34, 40, 47, 52, 58, 65, 73, 80, 87, 94, 102, 110, 118, 126, 135, 144, 155, 165, 176, 189, 201, 216, 232, 248, 268, 284];
+// x axis
+const dialReading = [
+  0, 6, 12, 16, 22, 28, 34, 40, 47, 52, 58, 65, 73, 80, 87, 94, 102, 110, 118, 126, 135, 144, 155, 165, 176, 189, 201,
+  216, 232, 248, 268, 284,
+];
 // y axis
-const loadKN = [0, 2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20, 22.5, 25, 27.5, 30, 32.5, 35, 37.5, 40, 42.5, 45, 46.5, 48, 49.5, 52.1, 53.5, 54, 55, 56.8, 57.5, 60, 62, 64.2, 65.5];
+const loadKN = [
+  0, 2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20, 22.5, 25, 27.5, 30, 32.5, 35, 37.5, 40, 42.5, 45, 46.5, 48, 49.5, 52.1, 53.5,
+  54, 55, 56.8, 57.5, 60, 62, 64.2, 65.5,
+];
 
 var currPos = 0;
 
@@ -49,6 +55,13 @@ var sampleFinalDiameter = 0;
 
 document.getElementById("step1").classList.remove("disabled");
 window.refresh();
+
+window.addEventListener("load", function () {
+  setTimeout(() => {
+    if (vc) vc.init();
+    if (sample1) sample1.init();
+  }, 1500);
+});
 
 function handle() {
   eval(`handleStep${currentStepProgress}()`);
@@ -63,8 +76,8 @@ function handleStep1() {
     return;
   }
 
-  if (len < 35 || len > 40) {
-    alert("Wrong readings! Please take your reading correctly via venier caliper. (Range must be in b/w 35 to 40 mm)");
+  if (len < 42 || len > 45) {
+    alert("Wrong readings! Please take your reading correctly via venier caliper. (Range must be in b/w 42 to 45 mm)");
     return;
   }
 
@@ -88,12 +101,16 @@ function handleStep2() {
     return;
   }
 
-  if (len < 3 || len > 4) {
-    alert("Wrong readings! Please take your reading correctly via venier caliper. (Range must be in b/w 3 to 4 mm)");
+  if (len < 8 || len > 10) {
+    alert("Wrong readings! Please take your reading correctly via venier caliper. (Range must be in b/w 8 to 10 mm)");
     return;
   }
 
   sampleDiameter = len;
+
+  if (vc) vc.destory();
+  if (utm) utm.init();
+  if (sample1) sample1.init();
 
   pane.classList.add("done");
   pane.classList.remove("active");
@@ -131,16 +148,18 @@ function handleStep3() {
         },
       ],
     },
-    "Dial Reading in mm",
+    "Displacement in mm",
     "Load in kN"
   );
 
   document.getElementById("btnNext").disabled = true;
+  // document.getElementById("arrowNext").classList.add("disabled");
 
-  document.getElementById("startTest").addEventListener("click", (e) => {
+  document.getElementById("startTest").addEventListener("click", function testHandler(e) {
     let tableBody = document.getElementById("testData");
     e.currentTarget.disabled = true;
     document.getElementById("btnNext").disabled = true;
+    // document.getElementById("arrowNext").classList.add("disabled");
     e.currentTarget.innerHTML = "Running...";
 
     utm.setConfig({
@@ -158,8 +177,10 @@ function handleStep3() {
         clearInterval(intr);
         document.getElementById("startTest").disabled = false;
         document.getElementById("startTest").innerHTML = "Done";
+        document.getElementById("showGraphBtn").disabled = false;
         utm.stop();
         document.getElementById("btnNext").disabled = false;
+        // document.getElementById("arrowNext").classList.remove("disabled");
         return;
       }
 
@@ -184,9 +205,11 @@ function handleStep3() {
             },
           ],
         },
-        "Dial Reading in mm",
+        "Displacement in mm",
         "Load in kN"
       );
+
+      document.querySelector(".menu").scrollTo(0, document.querySelector(".menu").scrollHeight);
     }, 600);
   });
 
@@ -211,6 +234,41 @@ function handleStep4() {
   next.classList.remove("disabled");
 
   currentStepProgress = 5;
+
+  modal = new Modal({
+    title: "Can you answer the questions?",
+    body: [
+      {
+        page: 1,
+        title: "What does point A indicates in the graph?",
+        image: "images/stress-strain-curve2.jpg",
+        options: ["Yield Strength", "Tensile Strength", "Plastic Strength", "Ultimate Tensile Strength"],
+        correct: 0,
+      },
+      {
+        page: 2,
+        title: "What does point U indicates in the graph?",
+        image: "images/stress-strain-curve2.jpg",
+        options: ["Tensile Strength", "Yield Strength", "Ultimate Tensile Strength", "Plastic Strength"],
+        correct: 2,
+      },
+      {
+        page: 3,
+        title: "What does point F indicates in the graph?",
+        image: "images/stress-strain-curve2.jpg",
+        options: ["Tensile Strength", "Facture Point", "Ultimate Tensile Strength", "Plastic Strength"],
+        correct: 1,
+      },
+      {
+        page: 4,
+        title: "For which of the following stress-strain curve is linear till fracture?",
+        options: ["Metal", "Ceramic", "Thermoplastic polymer", "All of the above"],
+        correct: 1,
+      },
+    ],
+    onClose: handleStep5,
+  });
+  modal.show();
 }
 
 function handleStep5() {
@@ -224,6 +282,10 @@ function handleStep5() {
   next.classList.remove("disabled");
 
   currentStepProgress = 6;
+
+  if (vc) vc.init();
+  if (utm) utm.destory();
+  if (sample1) sample1.init();
 }
 
 function handleStep6() {
@@ -236,9 +298,23 @@ function handleStep6() {
   next.classList.add("active");
   next.classList.remove("disabled");
 
+  currentStepProgress = 7;
+}
+
+function handleStep7() {
+  let pane = document.getElementById("step7");
+
+  pane.classList.add("done");
+  pane.classList.remove("active");
+
+  let next = document.getElementById("step8");
+  next.classList.add("active");
+  next.classList.remove("disabled");
+
   //last
   document.getElementById("btnNext").disabled = true;
-  document.querySelector("#step7 .content").innerHTML = `
+  // document.getElementById("arrowNext").classList.add("disabled");
+  document.querySelector("#step8 .content").innerHTML = `
     <table>
       <tr>
         <td>Initial Length</td>
@@ -311,4 +387,18 @@ function plotGraph(graphCtx, data, labelX, labelY) {
       },
     });
   }
+}
+
+function showGraph() {
+  graphModal = new Modal({
+    title: "Stree Strain Curve",
+    body: [
+      {
+        page: 1,
+        title: "Stress Strain Curve",
+        image: "images/stress-strain-curve2.jpg",
+      },
+    ],
+  });
+  graphModal.show();
 }
