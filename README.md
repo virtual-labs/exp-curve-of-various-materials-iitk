@@ -1,25 +1,24 @@
 ## Introduction
 
 
-<b>Discipline | <b>Material Science and Engineering 
+<b>Discipline | <b> Mechanical Enginnering
 :--|:--|
 <b> Lab | <b> Mechanical Metallurgy Lab
-<b> Experiment|     <b> Tensile Test and Stress Strain Curve of Steel
+<b> Experiment|  <b> Stress-Strain Curve of Various Materials
 
 ### About the Experiment 
 
-The experiment consists of obtaining stress-strain curves of different materials using tensile testing. Furthermore,
+<b> The tensile stress-strain curve nature for different materials (i.e., metals, polymers and ceramics) are different.
 
-<b>Name of Developer | <b> Prof. Kantesh Balani 
+<b>Name of Developer | <b> Prof. Sudhansu S. Singh 
 :--|:--|
-<b> Institute | <b>  IIT Kanpur
-<b> Email id|     <b>  kbalani@iitk.ac.in
-<b> Department |  MSE
+<b> Institute | <b>IIT Kanpur
+<b> Email id|     <b>sudhanss@iitk.ac.in
+<b> Department | Materials Science & Engineering
 
 ### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | Prof. Sudhanshu S Singh | Faculty | MSE | IIT Kanpur | sudhanss@iitk.ac.in
-2 | Prof. Shashank Shekhar | Faculty | MSE | IIT Kanpur | shashank@iitk.ac.in
-3 | Abhineet | Student | Computer Science | REC Kannauj | iabhiteck@gmail.com
+1 |Mr. Abhineet | Student | CSE | REC Kannauj | 
+
