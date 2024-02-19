@@ -1,0 +1,55 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which is true for uniaxial tensile engineering stress-strain curve of a polycrystalline aluminum?",
+      "answers": {
+        "a": "Yield strength is more than ultimate tensile strength",
+        "b": "Fracture stress is less than ultimate tensile strength",
+        "c": "Slope of the stress-strain curve is the stiffness",
+        "d": "The maximum stress is called yield point"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "question": "2. Which one among the following exhibits highest modulus?",
+      "answers": {
+        "a": "Aluminum (metal)",
+        "b": "Polyethylene (polymer)",
+        "c": "Alumina (ceramic)",
+        "d": "All above have same modulus"
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "question": "3. For which of the following stress-strain curve is linear till fracture?",
+      "answers": {
+        "a": "Metal",
+        "b": "Ceramic",
+        "c": "Thermoplastic polymer",
+        "d": "All of the above"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "question": "4. Which material show a whole range of stress-strain responses, depending on conditions, from very creepy behavior to stiff elastic behavior, a rubbery range in between.",
+      "answers": {
+        "a": "Polymer",
+        "b": "Metal",
+        "c": "Ceramic",
+        "d": "All of the above"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "question": "5. Which one of the following is true for the stress-strain curve of thermoplastic polymer?",
+      "answers": {
+        "a": "There is no elastic regime",
+        "b": "Necking takes place after elastic regime",
+        "c": "The curve continuously goes up till fracture",
+        "d": "The curve goes up till UTS point and then goes down till fracture"
+      },
+      "correctAnswer": "b"
+    }
+  ]
+}

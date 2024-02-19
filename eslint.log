@@ -1,0 +1,197 @@
+
+/home/runner/work/exp-curve-of-various-materials-iitk/exp-curve-of-various-materials-iitk/experiment/simulation/js/components.js
+     1:10  warning  'VernierCaliper' is defined but never used                       no-unused-vars
+     5:23  warning  'SAMPLE_ASSETS_PATH' is not defined                              no-undef
+    29:22  warning  'ContextMenu' is not defined                                     no-undef
+    29:43  warning  'ContextMenu' is not defined                                     no-undef
+    57:9   warning  'rulerMidPointY' is assigned a value but never used              no-unused-vars
+    68:7   warning  'precision' is assigned a value but never used                   no-unused-vars
+    70:7   warning  'LC' is assigned a value but never used                          no-unused-vars
+    73:7   warning  'zeroError' is already defined                                   no-redeclare
+    74:7   warning  'displayInfo' is assigned a value but never used                 no-unused-vars
+    75:7   warning  'objectWidthPixel' is assigned a value but never used            no-unused-vars
+    77:7   warning  'randomZeroError' is assigned a value but never used             no-unused-vars
+    78:7   warning  'randomMainScaleDivisions' is assigned a value but never used    no-unused-vars
+    79:7   warning  'randomVernierScaleDivision' is assigned a value but never used  no-unused-vars
+    80:7   warning  'randomObjectWidthPixel' is assigned a value but never used      no-unused-vars
+   104:7   warning  'startY' is defined but never used                               no-unused-vars
+   153:23  warning  'ContextMenu' is not defined                                     no-undef
+   179:11  warning  'utm' is not defined                                             no-undef
+   179:18  warning  'utm' is not defined                                             no-undef
+   189:11  warning  'utm' is not defined                                             no-undef
+   189:18  warning  'utm' is not defined                                             no-undef
+   227:67  warning  'getMainScaleReading' is not defined                             no-undef
+   296:5   warning  'boundary' is not defined                                        no-undef
+   306:13  warning  'boundary' is not defined                                        no-undef
+   306:34  warning  'boundary' is not defined                                        no-undef
+   306:55  warning  'boundary' is not defined                                        no-undef
+   306:76  warning  'boundary' is not defined                                        no-undef
+   316:5   warning  'boundary' is not defined                                        no-undef
+   326:13  warning  'boundary' is not defined                                        no-undef
+   326:34  warning  'boundary' is not defined                                        no-undef
+   326:55  warning  'boundary' is not defined                                        no-undef
+   326:76  warning  'boundary' is not defined                                        no-undef
+   392:29  warning  'event' is defined but never used                                no-unused-vars
+   422:27  warning  'event' is defined but never used                                no-unused-vars
+   475:23  warning  'ContextMenu' is not defined                                     no-undef
+   484:15  warning  'sample1' is not defined                                         no-undef
+   553:10  warning  'UTM' is defined but never used                                  no-unused-vars
+   572:22  warning  'ContextMenu' is not defined                                     no-undef
+   572:43  warning  'ContextMenu' is not defined                                     no-undef
+   626:23  warning  'ContextMenu' is not defined                                     no-undef
+   647:7   warning  'x' is not defined                                               no-undef
+   651:36  warning  'x' is not defined                                               no-undef
+   659:5   warning  'x' is not defined                                               no-undef
+   660:5   warning  'y' is not defined                                               no-undef
+   661:34  warning  'x' is not defined                                               no-undef
+   661:37  warning  'y' is not defined                                               no-undef
+   663:5   warning  'x' is not defined                                               no-undef
+   664:5   warning  'y' is not defined                                               no-undef
+   665:34  warning  'x' is not defined                                               no-undef
+   665:37  warning  'y' is not defined                                               no-undef
+   667:5   warning  'x' is not defined                                               no-undef
+   669:5   warning  'y' is not defined                                               no-undef
+   670:28  warning  'x' is not defined                                               no-undef
+   670:31  warning  'y' is not defined                                               no-undef
+   672:6   warning  'x' is not defined                                               no-undef
+   672:29  warning  'y' is not defined                                               no-undef
+   673:28  warning  'x' is not defined                                               no-undef
+   673:31  warning  'y' is not defined                                               no-undef
+   684:9   warning  'step' is not defined                                            no-undef
+   685:22  warning  'step' is not defined                                            no-undef
+   696:9   warning  'step' is not defined                                            no-undef
+   697:22  warning  'step' is not defined                                            no-undef
+   720:5   warning  'boundary' is not defined                                        no-undef
+   729:13  warning  'boundary' is not defined                                        no-undef
+   729:34  warning  'boundary' is not defined                                        no-undef
+   729:55  warning  'boundary' is not defined                                        no-undef
+   729:76  warning  'boundary' is not defined                                        no-undef
+   748:12  warning  'drawLine' is defined but never used                             no-unused-vars
+   755:27  warning  'event' is defined but never used                                no-unused-vars
+   768:29  warning  'event' is defined but never used                                no-unused-vars
+   777:11  warning  'rect' is assigned a value but never used                        no-unused-vars
+   849:23  warning  'ContextMenu' is not defined                                     no-undef
+   858:15  warning  'sample1' is not defined                                         no-undef
+   911:10  warning  'Sample1' is defined but never used                              no-unused-vars
+   914:17  warning  'SAMPLE_ASSETS_PATH' is not defined                              no-undef
+   929:22  warning  'ContextMenu' is not defined                                     no-undef
+   929:43  warning  'ContextMenu' is not defined                                     no-undef
+   931:25  warning  'ContextMenu' is not defined                                     no-undef
+   931:50  warning  'ContextMenu' is not defined                                     no-undef
+   956:23  warning  'ContextMenu' is not defined                                     no-undef
+   964:5   warning  'x' is not defined                                               no-undef
+   965:5   warning  'y' is not defined                                               no-undef
+   968:7   warning  'x' is not defined                                               no-undef
+   968:12  warning  'x' is not defined                                               no-undef
+   969:7   warning  'y' is not defined                                               no-undef
+   969:12  warning  'y' is not defined                                               no-undef
+   974:9   warning  'utm' is not defined                                             no-undef
+   975:11  warning  'utm' is not defined                                             no-undef
+   977:18  warning  'utm' is not defined                                             no-undef
+   982:34  warning  'x' is not defined                                               no-undef
+   982:37  warning  'y' is not defined                                               no-undef
+   992:9   warning  'step' is not defined                                            no-undef
+   993:22  warning  'step' is not defined                                            no-undef
+  1004:9   warning  'step' is not defined                                            no-undef
+  1005:22  warning  'step' is not defined                                            no-undef
+  1019:7   warning  'boundary' is not defined                                        no-undef
+  1026:7   warning  'boundary' is not defined                                        no-undef
+  1036:13  warning  'boundary' is not defined                                        no-undef
+  1036:34  warning  'boundary' is not defined                                        no-undef
+  1036:55  warning  'boundary' is not defined                                        no-undef
+  1036:76  warning  'boundary' is not defined                                        no-undef
+  1055:27  warning  'event' is defined but never used                                no-unused-vars
+  1070:11  warning  'utm' is not defined                                             no-undef
+  1070:18  warning  'utm' is not defined                                             no-undef
+  1070:36  warning  'utm' is not defined                                             no-undef
+  1071:9   warning  'utm' is not defined                                             no-undef
+  1073:18  warning  'vc' is not defined                                              no-undef
+  1073:24  warning  'vc' is not defined                                              no-undef
+  1073:41  warning  'vc' is not defined                                              no-undef
+  1074:9   warning  'vc' is not defined                                              no-undef
+
+/home/runner/work/exp-curve-of-various-materials-iitk/exp-curve-of-various-materials-iitk/experiment/simulation/js/context.js
+  1:7  warning  'ContextMenu' is defined but never used  no-unused-vars
+
+/home/runner/work/exp-curve-of-various-materials-iitk/exp-curve-of-various-materials-iitk/experiment/simulation/js/index.js
+    2:7   warning  'schema' is assigned a value but never used               no-unused-vars
+   12:5   warning  'sampleLength' is assigned a value but never used         no-unused-vars
+   13:5   warning  'sampleDiameter' is assigned a value but never used       no-unused-vars
+   14:5   warning  'sampleFinalLength' is assigned a value but never used    no-unused-vars
+   15:5   warning  'sampleFinalDiameter' is assigned a value but never used  no-unused-vars
+   22:9   warning  'vc' is not defined                                       no-undef
+   22:13  warning  'vc' is not defined                                       no-undef
+   23:9   warning  'sample1' is not defined                                  no-undef
+   23:18  warning  'sample1' is not defined                                  no-undef
+   27:10  warning  'handle' is defined but never used                        no-unused-vars
+   32:10  warning  'handleStep1' is defined but never used                   no-unused-vars
+   57:10  warning  'handleStep2' is defined but never used                   no-unused-vars
+   72:7   warning  'vc' is not defined                                       no-undef
+   72:11  warning  'vc' is not defined                                       no-undef
+   73:7   warning  'utm' is not defined                                      no-undef
+   73:12  warning  'utm' is not defined                                      no-undef
+   74:7   warning  'sample1' is not defined                                  no-undef
+   74:16  warning  'sample1' is not defined                                  no-undef
+   86:10  warning  'handleStep3' is defined but never used                   no-unused-vars
+   89:8   warning  'utm' is not defined                                      no-undef
+   89:16  warning  'utm' is not defined                                      no-undef
+   94:8   warning  'utm' is not defined                                      no-undef
+  137:5   warning  'utm' is not defined                                      no-undef
+  138:5   warning  'utm' is not defined                                      no-undef
+  139:5   warning  'utm' is not defined                                      no-undef
+  153:5   warning  'utm' is not defined                                      no-undef
+  165:7   warning  'utm' is not defined                                      no-undef
+  176:11  warning  'utm' is not defined                                      no-undef
+  268:10  warning  'handleStep4' is defined but never used                   no-unused-vars
+  281:10  warning  'handleStep5' is defined but never used                   no-unused-vars
+  293:7   warning  'vc' is not defined                                       no-undef
+  293:11  warning  'vc' is not defined                                       no-undef
+  294:7   warning  'utm' is not defined                                      no-undef
+  294:12  warning  'utm' is not defined                                      no-undef
+  295:7   warning  'sample1' is not defined                                  no-undef
+  295:16  warning  'sample1' is not defined                                  no-undef
+  297:3   warning  'modal' is not defined                                    no-undef
+  297:15  warning  'Modal' is not defined                                    no-undef
+  369:3   warning  'modal' is not defined                                    no-undef
+  395:38  warning  'Chart' is not defined                                    no-undef
+  413:44  warning  'index' is defined but never used                         no-unused-vars
+  413:51  warning  'values' is defined but never used                        no-unused-vars
+  430:44  warning  'index' is defined but never used                         no-unused-vars
+  430:51  warning  'values' is defined but never used                        no-unused-vars
+  442:10  warning  'showGraph' is defined but never used                     no-unused-vars
+  443:3   warning  'graphModal' is not defined                               no-undef
+  443:20  warning  'Modal' is not defined                                    no-undef
+  458:3   warning  'graphModal' is not defined                               no-undef
+
+/home/runner/work/exp-curve-of-various-materials-iitk/exp-curve-of-various-materials-iitk/experiment/simulation/js/main.js
+   22:9   warning  'UTM' is not defined               no-undef
+   24:8   warning  'VernierCaliper' is not defined    no-undef
+   26:13  warning  'Sample1' is not defined           no-undef
+   59:10  warning  'i' is not defined                 no-undef
+   59:18  warning  'i' is not defined                 no-undef
+   59:36  warning  'i' is not defined                 no-undef
+   60:12  warning  'j' is not defined                 no-undef
+   60:20  warning  'j' is not defined                 no-undef
+   60:39  warning  'j' is not defined                 no-undef
+   61:22  warning  'i' is not defined                 no-undef
+   61:25  warning  'j' is not defined                 no-undef
+  131:24  warning  'event' is defined but never used  no-unused-vars
+  170:5   warning  'img' is not defined               no-undef
+  171:5   warning  'img' is not defined               no-undef
+  172:5   warning  'img' is not defined               no-undef
+  173:5   warning  'img' is not defined               no-undef
+  174:33  warning  'img' is not defined               no-undef
+  175:24  warning  'img' is not defined               no-undef
+  189:40  warning  'e' is defined but never used      no-unused-vars
+
+/home/runner/work/exp-curve-of-various-materials-iitk/exp-curve-of-various-materials-iitk/experiment/simulation/js/modal.js
+    4:7   warning  'Modal' is defined but never used  no-unused-vars
+  110:40  warning  'e' is defined but never used      no-unused-vars
+  121:40  warning  'e' is defined but never used      no-unused-vars
+  132:40  warning  'e' is defined but never used      no-unused-vars
+
+/home/runner/work/exp-curve-of-various-materials-iitk/exp-curve-of-various-materials-iitk/experiment/simulation/js/popover.js
+  39:7  warning  'Popover' is defined but never used  no-unused-vars
+
+✖ 182 problems (0 errors, 182 warnings)
+
